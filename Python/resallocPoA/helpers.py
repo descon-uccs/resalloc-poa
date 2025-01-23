@@ -2,7 +2,7 @@ import numpy as np
 
 def generateIR( n ):
     height = 2*n**2 + 1
-    matrix = np.zeros((height,3), dtype=np.int)
+    matrix = np.zeros((height,3), dtype=int)
 
     sideFaceLen = int((n+1)*n/2)
     sideFace = np.vstack( np.nonzero( np.flipud( np.tri(n+1) ) ) )[:,n+1:]

@@ -263,7 +263,7 @@ def optimizeWelfareMaxPoA(n, B, options=None):
     
     m = np.shape( B )[0]
     OptPoA = 0.
-    Optf = np.zeros( (m,n), dtype=np.float )
+    Optf = np.zeros( (m,n), dtype=float )
 
     for currentBasis in np.arange(m):
         w = B[currentBasis,:]
